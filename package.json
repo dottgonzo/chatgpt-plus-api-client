@@ -1,5 +1,5 @@
 {
-  "name": "chatgpt-plus-api-client",
+  "name": "chatgpt-plus-unofficial-client",
   "version": "1.2.0",
   "description": "Node.js Open Source project for making API calls to ChatGPT using TypeScript",
   "homepage": "https://github.com/mzbac/chatgpt-plus-api-client",
@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/mzbac/chatgpt-plus-api-client.git"
   },
-  "main": "dist/index.js",
+  "main": "index.js",
   "files": [
     "dist",
     "package.json",
@@ -15,7 +15,11 @@
   ],
   "scripts": {
     "prebuild": "rm -rf ./dist",
-    "build": "tsc"
+    "build": "tsc",
+    "watch-ts": "tsc -w",
+    "release:patch": "npm version patch && git push && git push --tags",
+    "release:minor": "npm version minor && git push && git push --tags",
+    "release:major": "npm version major && git push && git push --tags"
   },
   "keywords": ["chatgpt", "api", "client"],
   "author": "",
