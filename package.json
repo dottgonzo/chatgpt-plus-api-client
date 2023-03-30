@@ -8,11 +8,7 @@
     "url": "https://github.com/mzbac/chatgpt-plus-api-client.git"
   },
   "main": "index.js",
-  "files": [
-    "dist",
-    "package.json",
-    "README.md"
-  ],
+
   "scripts": {
     "build": "tsc",
     "watch-ts": "tsc -w",
